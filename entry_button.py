@@ -1,11 +1,12 @@
 import tkinter as tk
 
-def aktualizacja_pola2(*args):
+def aktualizacja_pola2():
         entry2.delete(0, tk.END)
         entry2.insert(0, float(entry1.get()) * 2)
 
 root = tk.Tk()
 root.title("ILOCZYN")
+root.resizable(False, False)
 
 entry1 = tk.Entry(root)
 entry1.grid(row=0, column=1)
